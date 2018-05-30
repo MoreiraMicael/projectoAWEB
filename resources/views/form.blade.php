@@ -18,12 +18,6 @@
 		@endif
 		<br>
 
-		Idade: <input name="idade" value="{{ old('idade') }}">
-		@if ( $errors->has('idade'))
-			{{ $errors->first('idade') }}
-		@endif
-		<br>
-
 		Email: <input name="email" value="{{ old('email') }}">
 		@if ( $errors->has('email'))
 			{{ $errors->first('email') }}

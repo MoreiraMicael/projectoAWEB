@@ -19,21 +19,21 @@ Route::get('/novo', function () {
     return view('form');
 });
 
-Route::get('/teste', function () {
+/*Route::get('/teste', function () {
     $nome = '<b>Carlos</b>';
     $altura = 1.8;
 
     return view('teste', compact('nome', 'altura'));
-});
+});*/
 
 Route::get('/rota1', 'UserController@create');
 
 Route::post('/rota2', 'UserController@store');
 
-Route::get('/caixas', 'CaixasController@index');
+//Route::get('/caixas', 'CaixasController@index');
 
-Route::get('/registo', 'UserController@create');
-Route::post('/registo', 'UserController@store');
+//Route::get('/registo', 'UserController@create');
+//Route::post('/registo', 'UserController@store');
 
 //Route::get('/login', 'SessionsController@create');
 //Route::post('/login', 'SessionsController@store');
