@@ -32,10 +32,14 @@ Route::post('/rota2', 'UserController@store');
 
 Route::get('/caixas', 'CaixasController@index');
 
-Route::get('/register', 'UserController@create');
-Route::post('/register2', 'RegistrationController@store');
+Route::get('/registo', 'UserController@create');
+Route::post('/registo', 'UserController@store');
 
-Route::get('/login', 'SessionsController@create');
-Route::post('/login2', 'SessionsController@store');
+//Route::get('/login', 'SessionsController@create');
+//Route::post('/login', 'SessionsController@store');
 
-Route::get('/logout', 'SessionsController@destroy');
+//Route::get('/logout', 'SessionsController@destroy');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

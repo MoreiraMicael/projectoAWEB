@@ -37,7 +37,7 @@ class UserController extends Controller
     {
         $regras = [
             'nome' => 'required',
-            'idade' => 'required|integer'
+            'idade' => 'required|integer',
             'email' => 'required|email',
             'password' => 'required'
         ];
