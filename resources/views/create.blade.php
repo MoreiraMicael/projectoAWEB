@@ -1,8 +1,8 @@
-@extends('layouts.master')
+@extends('template')
 
 @section('content')
 
-    <h2>Register</h2>
+    <h2>Registo</h2>
     <form method="POST" action="/register">
         {{ csrf_field() }}
         <div class="form-group">
