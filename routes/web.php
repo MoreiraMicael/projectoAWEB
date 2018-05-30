@@ -31,3 +31,11 @@ Route::get('/rota1', 'UserController@create');
 Route::post('/rota2', 'UserController@store');
 
 Route::get('/caixas', 'CaixasController@index');
+
+Route::get('/register', 'RegistrationController@create');
+Route::post('/register', 'RegistrationController@store');
+
+Route::get('/login', 'SessionsController@create');
+Route::post('/login', 'SessionsController@store');
+
+Route::get('/logout', 'SessionsController@destroy');
