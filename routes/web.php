@@ -32,10 +32,10 @@ Route::post('/rota2', 'UserController@store');
 
 Route::get('/caixas', 'CaixasController@index');
 
-Route::get('/register', 'RegistrationController@create');
-Route::post('/register', 'RegistrationController@store');
+Route::get('/register', 'UserController@create');
+Route::post('/register2', 'RegistrationController@store');
 
 Route::get('/login', 'SessionsController@create');
-Route::post('/login', 'SessionsController@store');
+Route::post('/login2', 'SessionsController@store');
 
 Route::get('/logout', 'SessionsController@destroy');

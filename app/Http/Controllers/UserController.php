@@ -38,12 +38,18 @@ class UserController extends Controller
         $regras = [
             'nome' => 'required',
             'idade' => 'required|integer'
+            'email' => 'required|email',
+            'password' => 'required'
         ];
+
+        $user = User::create(request(['name', 'idade', 'email', 'password']));
+
+        auth()->login($user);
 
         $request->validate($regras);
 
         return view('sucesso');
-        //
+
     }
 
     /**

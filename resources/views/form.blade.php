@@ -24,9 +24,21 @@
 		@endif
 		<br>
 
+		Idade: <input name="email" value="{{ old('email') }}">
+		@if ( $errors->has('email'))
+			{{ $errors->first('email') }}
+		@endif
+		<br>
+
+		Idade: <input name="password" value="{{ old('password') }}">
+		@if ( $errors->has('password'))
+			{{ $errors->first('password') }}
+		@endif
+		<br>
+
 		<input type="submit" value="Gravar">
-		
+
 	</form>
-	
+
 </body>
 </html>
